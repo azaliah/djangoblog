@@ -56,7 +56,7 @@ ROOT_URLCONF = 'codewarrior.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\django pwh\codewarrior\codewarrior\templates'],
+        'DIRS': [os.path.join(BASE_DIR , "codewarrior/templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
